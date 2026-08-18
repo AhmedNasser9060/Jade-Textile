@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bulbul is a working mobile robot prototype, reimagined as a material-flow assistant for garment production." />
+    <meta name="theme-color" content="#071411" />
+    <title>Bulbul — Mobile Robot Case Study</title>
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" data-header>
+      <a class="brand" href="#top" aria-label="Bulbul home">
+        <span class="brand-mark" aria-hidden="true">
+          <span></span><span></span>
+        </span>
+        <span>Bulbul</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="../../index.html">Portfolio</a>
+        <a href="#story">Story</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#prototype">Prototype</a>
+      </nav>
+      <a class="header-cta" href="#prototype">Watch demo <span aria-hidden="true">↘</span></a>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <img class="hero-media" src="assets/garment-factory-concept-v3.png" alt="Concept visualization of a compact mobile robot following a black guide line while male workers make garments inside a factory" />
+        <div class="hero-shade"></div>
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-content reveal">
+          <p class="eyebrow"><span></span> Mobile robotics · Case study</p>
+          <h1 id="hero-title">Keeping material<br /><em>in motion.</em></h1>
+          <p class="hero-copy">Bulbul is a physical delivery-robot prototype—originally built to reduce contact while serving infectious-disease patients. This case study explores how the same mobility idea can support garment production.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#workflow">Explore the application <span aria-hidden="true">↓</span></a>
+            <a class="text-link" href="#prototype"><span class="play">▶</span> See the real prototype</a>
+          </div>
+        </div>
+        <div class="hero-meta reveal" aria-label="Project summary">
+          <div><span>01</span><p>Working<br />prototype</p></div>
+          <div><span>02</span><p>Delivery<br />contexts</p></div>
+          <div><span>∞</span><p>Potential<br />routes</p></div>
+        </div>
+        <p class="concept-label">AI concept visualization · Proposed garment-factory application</p>
+      </section>
+
+      <section class="story section" id="story" aria-labelledby="story-title">
+        <div class="section-kicker reveal"><span>01</span> The idea</div>
+        <div class="story-layout">
+          <h2 class="display-title reveal" id="story-title">One mobility platform.<br /><span>Another meaningful job.</span></h2>
+          <div class="story-copy reveal">
+            <p class="lead">The robot was not invented for a portfolio brief. It began as a real response to a human problem: moving medicine to patients while limiting unnecessary exposure.</p>
+            <p>In a garment factory, movement is still the core challenge—only the payload changes. Instead of medicine, a mobile assistant can carry cut panels, work-in-progress bundles, or finished pieces between production stages.</p>
+            <aside class="truth-note">
+              <span class="truth-icon">i</span>
+              <p><strong>Clear by design.</strong> The prototype video documents the original build. Factory imagery on this page visualizes a proposed application, not a deployed production system.</p>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="workflow section" id="workflow" aria-labelledby="workflow-title">
+        <div class="workflow-heading">
+          <div>
+            <div class="section-kicker light reveal"><span>02</span> Proposed workflow</div>
+            <h2 class="display-title light reveal" id="workflow-title">From one station<br />to the <span>next.</span></h2>
+          </div>
+          <p class="workflow-intro reveal">A simple point-to-point loop can reduce repetitive carrying and keep operators focused on skilled production work.</p>
+        </div>
+
+        <div class="route-card reveal" data-route>
+          <div class="route-track" aria-hidden="true"><span class="route-progress"></span></div>
+          <button class="station is-active" data-station="0" type="button">
+            <span class="station-dot"><b>01</b></span>
+            <span class="station-text"><strong>Collect</strong><small>Pick up prepared bundles</small></span>
+          </button>
+          <button class="station" data-station="1" type="button">
+            <span class="station-dot"><b>02</b></span>
+            <span class="station-text"><strong>Move</strong><small>Travel through a clear aisle</small></span>
+          </button>
+          <button class="station" data-station="2" type="button">
+            <span class="station-dot"><b>03</b></span>
+            <span class="station-text"><strong>Deliver</strong><small>Handoff at the next stage</small></span>
+          </button>
+        </div>
+
+        <div class="benefit-grid">
+          <article class="benefit reveal">
+            <span class="benefit-number">01</span>
+            <div class="benefit-icon" aria-hidden="true">↔</div>
+            <h3>Less manual transit</h3>
+            <p>Move light production bundles without repeatedly pulling operators away from their stations.</p>
+          </article>
+          <article class="benefit reveal">
+            <span class="benefit-number">02</span>
+            <div class="benefit-icon" aria-hidden="true">◎</div>
+            <h3>Clearer material flow</h3>
+            <p>Give routine transfers a visible path between cutting, sewing, inspection, and packing.</p>
+          </article>
+          <article class="benefit reveal">
+            <span class="benefit-number">03</span>
+            <div class="benefit-icon" aria-hidden="true">◇</div>
+            <h3>Human-centered support</h3>
+            <p>Position the robot as an assistant for repetitive movement—not a replacement for skilled hands.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="prototype section" id="prototype" aria-labelledby="prototype-title">
+        <div class="prototype-copy">
+          <div class="section-kicker reveal"><span>03</span> The real build</div>
+          <h2 class="display-title reveal" id="prototype-title">Prototype,<br /><span>not just a render.</span></h2>
+          <p class="lead reveal">The original Bulbul robot was built as a medicine-delivery concept for infectious-disease care. Its friendly enclosure, wheeled base, and onboard interface turned the idea into a physical demonstration.</p>
+          <dl class="prototype-facts reveal">
+            <div><dt>Origin</dt><dd>Healthcare delivery</dd></div>
+            <div><dt>Format</dt><dd>Mobile physical prototype</dd></div>
+            <div><dt>Next lens</dt><dd>Garment material flow</dd></div>
+          </dl>
+        </div>
+        <div class="video-shell reveal">
+          <div class="video-topbar">
+            <span><i></i> Original prototype footage</span>
+            <a href="https://drive.google.com/file/d/131ypzpBTqNyrmotlVEre_xoAnwiz0Ssx/view?usp=sharing" target="_blank" rel="noopener">Open in Drive ↗</a>
+          </div>
+          <div class="video-frame">
+            <video controls preload="metadata" data-start-time="93" aria-label="Bulbul robot prototype demonstration, starting at one minute and thirty-three seconds">
+              <source src="https://drive.google.com/uc?export=download&amp;id=131ypzpBTqNyrmotlVEre_xoAnwiz0Ssx#t=93" />
+              Your browser cannot play this video. Use the “Open in Drive” link above.
+            </video>
+            <span class="video-start-badge">Starts at 01:33</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="closing section" aria-labelledby="closing-title">
+        <p class="eyebrow reveal"><span></span> Built to move with purpose</p>
+        <h2 class="reveal" id="closing-title">A small robot.<br />A more fluid <em>floor.</em></h2>
+        <p class="reveal">Bulbul shows how a purpose-built prototype can become the starting point for broader thinking about safe, practical movement.</p>
+        <a class="button button-light reveal" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="#top"><span class="brand-mark" aria-hidden="true"><span></span><span></span></span><span>Bulbul</span></a>
+      <p>Mobile robot · Portfolio case study</p>
+      <p>Concept presentation <span data-year></span></p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
